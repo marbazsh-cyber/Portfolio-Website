@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Arbaz Shaikh | Frontend Developer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- PROGRESS -->
+  <div id="progress">
+    <div id="progress-bar"></div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="#">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">Arbaz</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle theme">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+
+    <div class="hero-content container">
+      <h1 id="hero-name">Muhammad Arbaz Shaikh</h1>
+      <p class="hero-subtitle"><span id="typed"
+          data-phrases='["Frontend Developer","Angular · TypeScript · RxJS","Performance & Accessibility","UI Architect"]'></span>
+      </p>
+
+      <div class="hero-links">
+        <a class="btn" href="mailto:m.arbaz.sh@gmail.com">Email</a>
+        <a class="btn ghost" href="https://linkedin.com/in/arbaz-shaikh-b41150234" target="_blank">LinkedIn</a>
+      </div>
+
+      <div class="hero-quick">
+        <div class="tech-badges">
+          <span>Angular</span><span>TypeScript</span><span>.NET</span><span>SQL</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container reveal">
+      <h2>Profile Summary</h2>
+      <p class="lead">
+        Frontend Developer with 8 years of experience building scalable, high-performance
+        web applications. Specialized in Angular, TypeScript, .NET Core, and SQL Server.
+        Delivered 50+ features for healthcare platforms serving 200+ clinics and 15,000+
+        users with strong focus on UX, accessibility, and performance optimization.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2 class="reveal">Skills</h2>
+
+      <div class="cards">
+        <div class="card reveal">
+          <h3>Frontend</h3>
+          <p>Angular, TypeScript, JavaScript, HTML5, CSS3, SCSS, RxJS, NgRx</p>
+          <div class="skill-bar"><span style="--w:95%">95%</span></div>
+        </div>
+
+        <div class="card reveal">
+          <h3>Backend</h3>
+          <p>.NET Core, ASP.NET, MVC, C#, REST APIs, Entity Framework</p>
+          <div class="skill-bar"><span style="--w:80%">80%</span></div>
+        </div>
+
+        <div class="card reveal">
+          <h3>Database</h3>
+          <p>SQL Server, T-SQL, Stored Procedures, Query Optimization</p>
+          <div class="skill-bar"><span style="--w:85%">85%</span></div>
+        </div>
+
+        <div class="card reveal">
+          <h3>Practices</h3>
+          <p>Agile, CI/CD, Performance Optimization, WCAG, HIPAA</p>
+          <div class="skill-bar"><span style="--w:90%">90%</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="reveal">Experience</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <h3>Frontend Developer</h3>
+          <span>Health Force Hub · 2023 – Present</span>
+          <ul>
+            <li>Improved Angular app performance by 40%</li>
+            <li>Designed 25+ WCAG-compliant UI screens</li>
+            <li>Built 30+ REST APIs with .NET Core</li>
+            <li>Maintained 99.8% uptime using Azure DevOps</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item reveal">
+          <h3>Junior .NET Developer</h3>
+          <span>Manhattan Communication Limited · 2019 – 2022</span>
+          <ul>
+            <li>Developed 80+ web features</li>
+            <li>Optimized SQL queries by 60%</li>
+            <li>Delivered projects ahead of schedule</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section alt">
+    <div class="container">
+      <h2 class="reveal">Projects</h2>
+
+      <div class="project-card reveal">
+        <h3>Procurement Management System</h3>
+        <p>
+          Enterprise ERP system built using ASP.NET MVC, SQL Server, and modern frontend
+          technologies. Reduced procurement time by 50% and increased inventory accuracy
+          to 96%.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section">
+    <div class="container reveal">
+      <h2>Education</h2>
+      <p class="lead">
+        <strong>BSc Software Engineering</strong><br />
+        Sir Syed University of Engineering &amp; Technology (2017 – 2020)
+      </p>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section alt">
+    <div class="container reveal">
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li>Google IT Support Professional Certificate</li>
+        <li>Google IT Automation with Python</li>
+        <li>Google UX Design Professional Certificate</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="footer-grid reveal">
+        <div>
+          <h4>Get in touch</h4>
+          <p><a href="mailto:m.arbaz.sh@gmail.com">m.arbaz.sh@gmail.com</a></p>
+        </div>
+        <div>
+          <h4>© 2026</h4>
+          <p>Muhammad Arbaz Shaikh</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- EASTER-EGGS: hidden but available to JS -->
+  <div id="confetti-container" aria-hidden="true"></div>
+
+  <!-- BUY ME A COFFEE -->
+  <!-- <a href="https://www.buymeacoffee.com/arbaz" target="_blank" rel="noopener noreferrer" class="coffee-btn"
+    aria-label="Buy me a coffee">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+      <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+      <line x1="6" y1="1" x2="6" y2="4"></line>
+      <line x1="10" y1="1" x2="10" y2="4"></line>
+      <line x1="14" y1="1" x2="14" y2="4"></line>
+    </svg>
+  </a> -->
+
+</body>
+
+</html>
