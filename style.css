@@ -524,15 +524,48 @@ body {
 /* THEMES */
 body.retro {
   background: linear-gradient(135deg, #0f172a, #020617);
-  color: #cbd5e1
+  color: #e2e8f0;
 }
 
 body.retro .hero {
-  background: none
+  background: none;
 }
 
-body.retro .logo {
-  color: #06b6d4
+body.retro .section {
+  color: #e2e8f0;
+}
+
+body.retro .section.alt {
+  background: #1e293b;
+}
+
+body.retro .card,
+body.retro .project-card,
+body.retro .timeline-item {
+  background: #1e293b;
+  color: #e2e8f0;
+  border: 1px solid rgba(100, 116, 139, 0.2);
+}
+
+body.retro .card p,
+body.retro .timeline-item ul li,
+body.retro .project-card p {
+  color: #cbd5e1;
+}
+
+body.retro .timeline-item span {
+  color: #94a3b8;
+}
+
+body.retro h2 {
+  background: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+body.retro .lead {
+  color: #cbd5e1;
 }
 
 /* BUY ME A COFFEE BUTTON */
